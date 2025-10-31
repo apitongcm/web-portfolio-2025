@@ -1,13 +1,22 @@
-import React, { useRef } from "react";
+import React, { useRef,useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactForm() {
-  const form = useRef();
+ const form = useRef();
+ const [captchaValue, setCaptchaValue] = useState(null);
+ const [isSending, setIsSending] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+     if (!captchaValue) {
+      alert("Please complete the CAPTCHA before submitting.");
+      return;
+    }
+
+    setIsSending(true);
 
     emailjs
       .sendForm(
@@ -18,12 +27,16 @@ function ContactForm() {
       )
       .then(
         () => {
-          alert("Email sent successfully!");
+          console.log("Email sent successfully:", result.text);
+          alert("Message sent successfully!");
+          setIsSending(false);
           form.current.reset();
+          setCaptchaValue(null);
         },
         (error) => {
-          console.error("Email failed:", error);
-          alert("Something went wrong. Please try again.");
+          console.error("Error sending email:", error.text);
+          alert("Failed to send message. Please try again later.");
+          setIsSending(false);
         }
       );
   };
@@ -82,14 +95,27 @@ function ContactForm() {
           ></textarea>
         </div>
 
+        <div style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "1rem"
+        }}>
+        <ReCAPTCHA 
+        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+        onChange={(value) => setCaptchaValue(value)}
+       />
+       </div>
+
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
           type="submit"
+          disabled={isSending}
           className="w-full flex items-center justify-center gap-2 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl font-semibold text-sm sm:text-base tracking-wide transition-shadow shadow-lg hover:shadow-cyan-500/30"
         >
           <Send className="w-4 h-4 sm:w-5 sm:h-5" />
-          Send Message
+             {isSending ? "Sending..." : "Send Message"}
         </motion.button>
       </motion.form>
       </div>
