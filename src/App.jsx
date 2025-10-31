@@ -1,11 +1,7 @@
 import './App.css'
-import ContactForm from './Components/Emailme';
-import Footer from './Components/Footer';
-
-import LandingPage from './Components/LandingPage'
-import ParallaxSection from './Components/ParallaxSection'
-import Projects from './Components/Projects';
-import SkillsShowcase from './Components/SkillsShowcase';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
+import AppLoader from './pages/AppLoader';
 
 
 function App() {
@@ -13,13 +9,12 @@ function App() {
 
   return (
     <>
-      <ParallaxSection/>
-      <LandingPage/>
-      <SkillsShowcase/>
-      <Projects/>
-      <ContactForm/>
-      <Footer/>
-
+    <Router>
+      <Routes>
+        <Route path="/" element={<AppLoader/>} />
+        <Route path="/home" element={<Home/>}/>
+      </Routes>
+    </Router>
     </>
   )
 }
