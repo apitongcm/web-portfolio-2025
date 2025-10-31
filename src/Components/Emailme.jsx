@@ -27,7 +27,7 @@ function ContactForm() {
       )
       .then(
         () => {
-          console.log("Email sent successfully:", result.text);
+          console.log("Email sent successfully!");
           alert("Message sent successfully!");
           setIsSending(false);
           form.current.reset();
