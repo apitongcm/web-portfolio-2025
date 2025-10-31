@@ -1,5 +1,6 @@
 import React from 'react'
 import { Github, Linkedin, Mail } from "lucide-react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Connect() {
   return (
@@ -10,23 +11,23 @@ function Connect() {
         rel="noopener noreferrer"
         className="text-gray-600 hover:text-black transition-transform transform hover:scale-110"
       >
-        <Github size={52} />
+        <FaGithub className="text-4xl sm:text-5xl md:text-6xl"  />
       </a>
 
       <a
-        href="https://linkedin.com/in/apitongcm"
+        href="https://ph.linkedin.com/in/apitongcm"
         target="_blank"
         rel="noopener noreferrer"
         className="text-gray-600 hover:text-blue-700 transition-transform transform hover:scale-110"
       >
-        <Linkedin size={52} />
+        <FaLinkedin className="text-4xl sm:text-5xl md:text-6xl" />
       </a>
 
       <a
-        href="mailto:apitong.carlmarwin@proton.com"
+        href="#contact"
         className="text-gray-600 hover:text-red-500 transition-transform transform hover:scale-110"
       >
-        <Mail size={52} />
+        <FaEnvelope className="text-4xl sm:text-5xl md:text-6xl" />
       </a>
     </div>
   )

@@ -13,7 +13,7 @@ export default function ParallaxHero() {
   const yCaption = useTransform(scrollY, [0, 500], [0, 100]);
 
   return (
-    <section className="relative h-[120vh] xs:h-[100vh] sm:h-[140vh] md:h-[160vh] overflow-hidden flex items-center justify-center bg-black">
+    <section className="relative h-[120vh] sm:h-[140vh] md:h-[160vh] overflow-hidden flex items-center justify-center bg-black">
       {/* BACKGROUND LAYER */}
       <motion.div
         style={{ backgroundImage: `url(${bgLayer})`, y: yBg }}
@@ -41,7 +41,7 @@ export default function ParallaxHero() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-lg sm:text-2xl md:text-3xl opacity-90 drop-shadow-xl leading-snug"
+          className="text-lg sm:text-xl md:text-3xl opacity-90 drop-shadow-xl leading-snug"
         >
           From Firmware to Frameworks—Innovation with Security in Mind.
         </motion.p>
@@ -50,19 +50,25 @@ export default function ParallaxHero() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl sm:text-6xl md:text-8xl font-extrabold mt-3 leading-tight drop-shadow-xl"
+          className="text-4xl sm:text-7xl md:text-8xl font-extrabold mt-3 leading-tight drop-shadow-xl max-[641px]:text-5xl"
         >
           Bridging Hardware <br />
           and{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-pink-500">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
             Code.
           </span>
         </motion.h1>
 
         <motion.button
+           onClick={() => {
+                const aboutSection = document.getElementById("about");
+                if (aboutSection) {
+                    aboutSection.scrollIntoView({ behavior: "smooth" });
+                }
+          }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-8 text-base sm:text-xl px-8 sm:px-12 py-3 sm:py-4 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-gradient-to-r from-red-500 to-pink-500 transition duration-300"
+          className="mt-3 mb-10 text-base sm:text-xl px-8 sm:px-12 py-3 sm:py-4 bg-white text-cyan-900 font-semibold rounded-lg shadow-md hover:bg-gradient-to-r from-blue-500 to-cyan-500 transition duration-300"
         >
           Learn More
         </motion.button>

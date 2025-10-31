@@ -8,7 +8,7 @@ function TypewriterHero() {
     "A System/Embedded Engineer.",
     "A Master's in Computer Science student",
     "A Graduate of Electronics Engineering",
-    "A Design Engineer and An Artist",
+    "A Design Engineer and Researcher",
     "A Freelancer and a consultant",
     "Living in Iloilo City, Philippines"
     ];
@@ -62,14 +62,14 @@ function TypewriterHero() {
     transition={{ duration: 1 }}
     className="relative z-10 text-center px-4 sm:px-6 md:px-12"
   >
-    <h1 className="mt-10 text-4xl sm:text-6xl md:text-8xl font-extrabold leading-tight drop-shadow-xl">
+    <h1 className="mt-10 text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight drop-shadow-xl">
       Carl Marwin{" "}
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-pink-500">
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
         Apitong
       </span>
     </h1>
 
-    <h2 className="mt-3 text-xl sm:text-3xl md:text-4xl text-gray-700 opacity-90 drop-shadow-md leading-snug">
+    <h2 className="mt-3 text-xl sm:text-2xl md:text-3xl text-gray-700 opacity-90 drop-shadow-md leading-snug">
       {`${words[wordIndex].substring(0, subIndex)}${blink ? "|" : " "}`}
     </h2>
 

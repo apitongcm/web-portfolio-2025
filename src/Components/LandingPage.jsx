@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from "./Hero";
-import RotatingItem from './RotatingItem';
+import About from './About';
 
 
 
@@ -8,7 +8,7 @@ function LandingPage() {
   return (
     <>
     <Hero/>
-    <RotatingItem/>
+    <About/>
 
     </>
   )

@@ -44,7 +44,7 @@ export default function SkillsShowcase() {
         transition={{ duration: 0.7 }}
         className="text-center text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-16 tracking-tight"
       >
-        Tools & <span className="text-rose-600">Technologies</span>
+        Tools & <span className="text-blue-600">Technologies</span>
       </motion.h2>
 
      <motion.div
@@ -76,7 +76,7 @@ export default function SkillsShowcase() {
         rounded-3xl 
         p-12 h-64
         flex flex-col items-center justify-center
-        hover:border-red-600/60
+        hover:border-blue-600/60
         hover:bg-neutral-800/90
         transition-all duration-300
       "

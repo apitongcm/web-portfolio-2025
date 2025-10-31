@@ -1,4 +1,7 @@
 import './App.css'
+import ContactForm from './Components/Emailme';
+import Footer from './Components/Footer';
+
 import LandingPage from './Components/LandingPage'
 import ParallaxSection from './Components/ParallaxSection'
 import Projects from './Components/Projects';
@@ -14,7 +17,9 @@ function App() {
       <LandingPage/>
       <SkillsShowcase/>
       <Projects/>
-     
+      <ContactForm/>
+      <Footer/>
+
     </>
   )
 }
