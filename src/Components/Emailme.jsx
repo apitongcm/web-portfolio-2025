@@ -27,7 +27,7 @@ function ContactForm() {
       )
       .then(
         () => {
-          console.log("Email sent successfully:", result.text);
+          console.log("Email sent successfully!");
           alert("Message sent successfully!");
           setIsSending(false);
           form.current.reset();
@@ -101,10 +101,14 @@ function ContactForm() {
             alignItems: "center",
             marginTop: "1rem"
         }}>
-        <ReCAPTCHA 
-        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-        onChange={(value) => setCaptchaValue(value)}
-       />
+        {import.meta.env.VITE_RECAPTCHA_SITE_KEY ? (
+        <ReCAPTCHA
+          sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+          onChange={(value) => setCaptchaValue(value)}
+        />
+      ) : (
+        <p>Loading security check...</p>
+      )}
        </div>
 
         <motion.button
