@@ -19,19 +19,19 @@ function Footer() {
         <div className="flex justify-center sm:justify-end gap-4 flex-wrap text-sm">
           <a
             href="#about"
-            className="hover:text-pink-400 transition-colors duration-300"
+            className="hover:text-blue-400 transition-colors duration-300"
           >
             About
           </a>
           <a
             href="#projects"
-            className="hover:text-pink-400 transition-colors duration-300"
+            className="hover:text-blue-400 transition-colors duration-300"
           >
             Projects
           </a>
           <a
             href="#contact"
-            className="hover:text-pink-400 transition-colors duration-300"
+            className="hover:text-blue-400 transition-colors duration-300"
           >
             Contact
           </a>
@@ -43,23 +43,23 @@ function Footer() {
             href="https://github.com/apitongcm"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-pink-400 transition-all duration-300"
+            className="hover:text-blue-400 transition-all duration-300"
           >
-            <FaGithub />
+            <FaGithub className="text-xl sm:text-2xl md:text-3xl" />
           </a>
           <a
             href="https://ph.linkedin.com/in/apitongcm"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-pink-400 transition-all duration-300"
+            className="hover:text-blue-400 transition-all duration-300"
           >
-            <FaLinkedin />
+            <FaLinkedin className="text-xl sm:text-2xl md:text-3xl"/>
           </a>
           <a
             href="#contact"
-            className="hover:text-pink-400 transition-all duration-300"
+            className="hover:text-blue-400 transition-all duration-300"
           >
-            <FaEnvelope />
+            <FaEnvelope className="text-xl sm:text-2xl md:text-3xl" />
           </a>
         </div>
       </div>
