@@ -4,13 +4,14 @@ import Connect from "./Connect";
 
 function TypewriterHero() {
   const words = [
-    "4 years in Automotive Software.",
-    "A System/Embedded Engineer.",
-    "A Master's in Computer Science student",
-    "A Graduate of Electronics Engineering",
-    "A Design Engineer and Researcher",
-    "A Freelancer and a consultant",
-    "Living in Iloilo City, Philippines"
+    "Four years of experience in Automotive Software Development",
+    "An Embedded Engineer specializing ECU Integration.",
+    "Master's Degree in Computer Science",
+    "focus on cybersecurity and intelligent systems",
+    "BS in Electronics Engineering",
+    "strong foundations in hardware and signal processing",
+    "Active freelancer and technical VA",
+    "Based in Iloilo City, Philippines"
     ];
 
   const [wordIndex, setWordIndex] = useState(0);

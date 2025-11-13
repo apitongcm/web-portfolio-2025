@@ -31,10 +31,10 @@ export default function CompactCard() {
         />
 
 
-        <p className="mt-2 text-cyan-100 text-center text-sm leading-relaxed opacity-90">
+        <div className="mt-2 text-cyan-100 text-center text-sm leading-relaxed opacity-90">
           <CardText />
           <CardBack/>
-        </p>
+        </div>
 
         {/* Divider line like a PCB trace */}
         <div className="w-20 mx-auto my-6 border-t-2 border-cyan-400/40 rounded-full"></div>

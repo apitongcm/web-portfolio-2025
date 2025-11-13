@@ -6,6 +6,7 @@ import ParallaxSection from '../Components/ParallaxSection'
 import Projects from '../Components/Projects';
 import SkillsShowcase from '../Components/SkillsShowcase';
 import MusicPlayer from '../Components/MusicPlayer';
+import MoreAboutMe from '../Components/MoreAboutMe';
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <MusicPlayer/>
       <LandingPage/>
       <SkillsShowcase/>
+      <MoreAboutMe/>
       <Projects/>
       <ContactForm/>
       <Footer/>
