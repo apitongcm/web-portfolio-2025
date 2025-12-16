@@ -43,7 +43,7 @@ export default function ParallaxHero() {
           transition={{ duration: 0.8 }}
           className="text-lg sm:text-xl md:text-3xl opacity-90 drop-shadow-xl leading-snug"
         >
-          From Firmware to Frameworks—Innovation with Security in Mind.
+          From safety-critical firmware to modern web applications, I ensure reliability, quality, and production-ready systems.
         </motion.p>
 
         <motion.h1
@@ -52,10 +52,10 @@ export default function ParallaxHero() {
           transition={{ duration: 0.8 }}
           className="text-4xl sm:text-7xl md:text-8xl font-extrabold mt-3 leading-tight drop-shadow-xl max-[641px]:text-5xl"
         >
-          Bridging Hardware <br />
-          and{" "}
+          Building Reliable Software Through Testing <br />
+          , Automation, {" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
-            Code.
+            and Systems Thinking.
           </span>
         </motion.h1>
 
@@ -70,7 +70,7 @@ export default function ParallaxHero() {
           whileTap={{ scale: 0.95 }}
           className="mt-3 mb-10 text-base sm:text-xl px-8 sm:px-12 py-3 sm:py-4 bg-white text-cyan-900 font-semibold rounded-lg shadow-md hover:bg-gradient-to-r from-blue-500 to-cyan-500 transition duration-300"
         >
-          Learn More
+          Explore My Experience
         </motion.button>
       </motion.div>
     </section>

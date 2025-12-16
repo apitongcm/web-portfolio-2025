@@ -8,18 +8,18 @@ import { ChartNetwork, Bug, BadgeCheck, Cpu, Search, FileCode } from 'lucide-rea
 function MoreAboutMe() {
 
      const competencies = [
-        { Icon: ChartNetwork , caption: "Communication Protocols", 
-            details: "Expert in CAN, LIN, CXPI, and Ethernet protocols essential for automotive ECU communication and diagnostics" },
-        { Icon: Bug , caption: "Test Automation", 
-            details: "Proficient in developing automated test frameworks using Javascript, Python, Matlab, CANoe, and Vector tools for comprehensive validation" },
-        { Icon: BadgeCheck, caption: "Industry Standards", 
-            details: "Deep understanding of JASO, JMAAB modeling guidelines, AUTOSAR, ISO 26262 functional safety, and OSEK process frameworks" },
-        { Icon:Cpu, caption: "Embedded Systems", 
-            details: "Experienced in firmware development and debugging for microcontroller platforms using C and assembly language" },
+        { Icon: Bug , caption: "Software Testing & Automation", 
+            details: "Automated UI and API testing,Function testing,Integration testing,System testing,Performance testing, CI/CD pipelines, and structured test frameworks to ensure software quality and reliability." },
+        { Icon: Cpu , caption: "Systems & Embedded Validation", 
+            details: "Experience validating safety-critical embedded systems, including ECU communication, diagnostics, and fault analysis." },
+        { Icon: BadgeCheck, caption: "Industry & Quality Standards", 
+            details: "Experience working within structured engineering and quality processes, including safety and compliance-driven environments." },
+        { Icon:ChartNetwork, caption: "Security Assurance and ISMS Compliance", 
+            details: "Proven experience in the validation phase of information and systems, ensuring alignment with security policies and controls defined by an Information Security Management System (ISMS) and GDPR." },
         { Icon: Search, caption: "Diagnostics & Troubleshooting", 
-            details: "Skilled in UDS diagnostics, fault analysis, and root cause investigation using oscilloscopes and protocol analyzers" },
+            details: "Root-cause analysis using logs, protocol analyzers, and system-level debugging techniques." },
         { Icon: FileCode, caption: "Scripting & Tools", 
-            details: "Advanced capabilities in Javascript, Python, CAPL scripting, and CI/CD pipeline integration for continuous testing" },
+            details: "JavaScript, Python, CAPL, VBA, Bash scripting, and automation tooling for testing, validation, and workflow efficiency." },
       ];
   return (
     <>

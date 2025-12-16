@@ -5,12 +5,11 @@ import Connect from "./Connect";
 function TypewriterHero() {
   const words = [
     "Four years of experience in Automotive Software Development",
-    "An Embedded Engineer specializing ECU Integration.",
-    "Master's Degree in Computer Science",
-    "focus on cybersecurity and intelligent systems",
-    "BS in Electronics Engineering",
-    "strong foundations in hardware and signal processing",
-    "Active freelancer and technical VA",
+    "Embedded systems engineer with ECU integration expertise",
+    "Master’s degree candidate in Computer Science",
+    "Focused on software quality, automation, and security",
+    "Bachelor’s degree in Electronics Engineering",
+    "Freelance QA engineer and technical specialist",
     "Based in Iloilo City, Philippines"
     ];
 
