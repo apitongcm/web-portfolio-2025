@@ -27,7 +27,7 @@ export default function Projects() {
       id="projects"
       className="relative min-h-screen bg-[#0a0a0a] py-24 px-6 overflow-hidden"
     >
-      {/* Faint Tech Grid Background */}
+
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
         style={{
           backgroundImage:
@@ -62,7 +62,7 @@ export default function Projects() {
               {repo.description || "Technical exploration and code experiment."}
             </p>
 
-            {/* Hardware-style Language Chips */}
+
             <div className="flex flex-wrap gap-2 mb-5">
               {repo.languages.map((lang, i) => (
                 <span
@@ -85,7 +85,7 @@ export default function Projects() {
               </a>
             </div>
 
-            {/* Tiny hardware LED pulse */}
+
             <motion.div
               className="absolute top-4 right-4 w-2 h-2 bg-blue-600 rounded-full shadow-[0_0_8px_rgba(225,29,72,0.6)]"
               animate={{ opacity: [1, 0.3, 1] }}
