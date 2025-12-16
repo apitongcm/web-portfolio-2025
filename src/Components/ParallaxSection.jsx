@@ -41,7 +41,7 @@ export default function ParallaxHero() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-lg sm:text-xl md:text-3xl opacity-90 drop-shadow-xl leading-snug"
+          className="text-md sm:text-xl md:text-2xl opacity-90 drop-shadow-xl leading-snug"
         >
           From safety-critical firmware to modern web applications, I ensure reliability, quality, and production-ready systems.
         </motion.p>
@@ -50,10 +50,10 @@ export default function ParallaxHero() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl sm:text-7xl md:text-8xl font-extrabold mt-3 leading-tight drop-shadow-xl max-[641px]:text-5xl"
+          className="text-3xl sm:text-5xl md:text-6xl font-extrabold mt-3 leading-tight drop-shadow-xl max-[641px]:text-4xl"
         >
-          Building Reliable Software Through Testing <br />
-          , Automation, {" "}
+          Building Reliable Software Through Testing 
+          , Automation, {" "} <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
             and Systems Thinking.
           </span>

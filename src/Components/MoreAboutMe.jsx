@@ -9,13 +9,13 @@ function MoreAboutMe() {
 
      const competencies = [
         { Icon: Bug , caption: "Software Testing & Automation", 
-            details: "Automated UI and API testing,Function testing,Integration testing,System testing,Performance testing, CI/CD pipelines, and structured test frameworks to ensure software quality and reliability." },
+            details: "Drove quality via UI/API automation, functional, integration, system, performance testing, and integrating test frameworks." },
         { Icon: Cpu , caption: "Systems & Embedded Validation", 
             details: "Experience validating safety-critical embedded systems, including ECU communication, diagnostics, and fault analysis." },
         { Icon: BadgeCheck, caption: "Industry & Quality Standards", 
             details: "Experience working within structured engineering and quality processes, including safety and compliance-driven environments." },
-        { Icon:ChartNetwork, caption: "Security Assurance and ISMS Compliance", 
-            details: "Proven experience in the validation phase of information and systems, ensuring alignment with security policies and controls defined by an Information Security Management System (ISMS) and GDPR." },
+        { Icon:ChartNetwork, caption: "Security Assurance and Compliance", 
+            details: "Validated information and systems for ISMS and GDPR compliance, assuring alignment with critical security policies." },
         { Icon: Search, caption: "Diagnostics & Troubleshooting", 
             details: "Root-cause analysis using logs, protocol analyzers, and system-level debugging techniques." },
         { Icon: FileCode, caption: "Scripting & Tools", 
