@@ -11,7 +11,7 @@ function MoreAboutMe() {
   return (
     <>
     <motion.div
-  className="grid place-items-center max-w-6xl mx-auto px-4"
+  className="grid place-items-center max-w-6xl mx-auto px-4 relative min-h-[90vh] sm:min-h-screen "
   initial="hidden"
   whileInView="visible"
   viewport={{ once: true }}
