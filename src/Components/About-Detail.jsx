@@ -23,7 +23,7 @@ function MoreAboutMe() {
 
     <motion.div
   className="
-    grid-cols-2 gap-4 max-w-6xl mx-auto
+    grid-cols-2 gap-4 max-w-6xl mx-auto text-center
   "
   initial="hidden"
   whileInView="visible"
@@ -37,14 +37,14 @@ function MoreAboutMe() {
 >
     <div className='mb-6 px-4 sm:px-8 md:px-16 text-center sm:text-left'>
 
-    <p className="text-lg sm:text-xl md:text-2xl text-black max-w-xl mx-auto sm:mx-0  ">
+    <p className="text-lg sm:text-xl md:text-2xl text-black max-w-xl mx-auto sm:mx-0 text-center ">
        I have experience developing both embedded and web-based projects where maintaining accuracy, stability, 
        and effective risk mitigation was paramount. My background allows me to approach software development with 
        a strong tester's mindset, focusing on anticipating failures, validating complex edge cases, and proactively 
        improving overall quality before the product's release.
     </p>
 
-    <p className="text-lg sm:text-xl md:text-2xl text-black max-w-xl mx-auto sm:mx-0 ">
+    <p className="text-lg sm:text-xl md:text-2xl text-black max-w-xl mx-auto sm:mx-0 text-center">
       I am currently pursuing a Master’s degree in Computer Science and
        have hands-on experience with test automation, scripting, and system troubleshooting. 
        I enjoy working on projects where quality, reliability, and engineering discipline matter.
