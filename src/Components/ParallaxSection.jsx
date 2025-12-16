@@ -50,7 +50,7 @@ export default function ParallaxHero() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl sm:text-7xl md:text-8xl font-extrabold mt-3 leading-tight drop-shadow-xl max-[641px]:text-6xl"
+          className="text-5xl sm:text-6xl md:text-8xl font-extrabold mt-3 leading-tight drop-shadow-xl max-[641px]:text-6xl"
         >
           Software Testing 
           , Automation, {" "} <br />

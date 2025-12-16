@@ -65,7 +65,7 @@ function TypewriterHero() {
     <h1 className="mt-10 text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight drop-shadow-xl">
       Carl Marwin{" "}
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
-        Apitong
+        Apitong, ECT, CC
       </span>
     </h1>
 
