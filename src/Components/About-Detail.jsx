@@ -43,9 +43,6 @@ function MoreAboutMe() {
        a strong tester's mindset, focusing on anticipating failures, validating complex edge cases, and proactively 
        improving overall quality before the product's release.
     </p>
-    </div>
-
-      <div className='mb-6 px-4 sm:px-8 md:px-16 text-center sm:text-left'>
 
     <p className="text-lg sm:text-xl md:text-2xl text-black max-w-xl mx-auto sm:mx-0 ">
       I am currently pursuing a Master’s degree in Computer Science and

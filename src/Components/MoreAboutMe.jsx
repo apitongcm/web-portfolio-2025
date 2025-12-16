@@ -70,7 +70,7 @@ function MoreAboutMe() {
       >
         <Icon size={42} className='text-blue-700' />
       </div>
-      <h3 className='text-lg font-semibold'>
+      <h3 className='text-lg text-center font-semibold'>
         {caption}
       </h3>
       <p className="text-sm mt-4 text-center font-medium tracking-wide">

@@ -41,21 +41,21 @@ export default function ParallaxHero() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-md sm:text-xl md:text-2xl opacity-90 drop-shadow-xl leading-snug"
+          className="text-lg sm:text-2xl md:text-3xl opacity-90 drop-shadow-xl leading-snug"
         >
-          From safety-critical firmware to modern web applications, I ensure reliability, quality, and production-ready systems.
+          reliability, quality, and production readiness across diverse systems
         </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl sm:text-5xl md:text-6xl font-extrabold mt-3 leading-tight drop-shadow-xl max-[641px]:text-4xl"
+          className="text-4xl sm:text-6xl md:text-7xl font-extrabold mt-3 leading-tight drop-shadow-xl max-[641px]:text-5xl"
         >
-          Building Reliable Software Through Testing 
+          Software Testing 
           , Automation, {" "} <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
-            and Systems Thinking.
+            and Systems.
           </span>
         </motion.h1>
 

@@ -55,7 +55,7 @@ export default function Projects() {
             transition={{ type: "spring", stiffness: 150, delay: i * 0.05 }}
             className="relative p-6 border border-gray-800 rounded-xl bg-gradient-to-b from-[#111] to-[#000]
                        shadow-[0_0_10px_rgba(255,255,255,0.05)] hover:shadow-[0_0_15px_rgba(225,29,72,0.2)] 
-                       transition-all duration-300"
+                       transition-all duration-300 w-16 h-16"
           >
             <h3 className="text-xl font-semibold text-white mb-2 truncate">{repo.name}</h3>
             <p className="text-sm text-gray-400 mb-4 line-clamp-2">
